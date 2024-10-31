@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Fun API</title>
+</head>
+<body>
+  <button id="freshPoint">Trouvez un îlot de fraîcheur</button>
+  <br>
+  <div id="freshPoint-info">
+    <p id="freshPointInfo"></p>
+  </div>
+  <div id="comment">
+    <form>
+      <label for="message">Send us a message: </label><input type="text" id="messageInput" name="message" value="">
+      <button type="submit" id="sendButton">Send</button>  
+    </form>
+    <div class="comment" id="myComment">Votre message: <span id="message"></span>
+
+  </div>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/fetchFreshPoint.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
